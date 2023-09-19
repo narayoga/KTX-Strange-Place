@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rounded_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardBackgroundColor="@color/teal_700"
+        app:cardCornerRadius="500dp"
+        android:layout_margin="50dp">
+
+        <ImageView
+            android:id="@+id/roundedImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/name_profile"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/profile_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationY="370dp"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/email"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:translationY="410dp" />
+
+    <TextView
+        android:id="@+id/name_github"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/url_github"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:translationY="450dp" />
+
+
+</RelativeLayout>
